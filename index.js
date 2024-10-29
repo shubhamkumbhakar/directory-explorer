@@ -51,6 +51,6 @@ const display = (req, res) => {
 
 app.all("*", display);
 
-app.listen(8080, () => {
-  console.log("Server running on 8080");
+app.listen(process.env.PORT || 5050, () => {
+  console.log("Example app listening on port 5050!");
 });
